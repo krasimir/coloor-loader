@@ -1,0 +1,29 @@
+{
+  "name": "coloor-loader",
+  "version": "0.1.0",
+  "description": "Image preloading utility that uses dominant color",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/coloor-loader.git"
+  },
+  "scripts": {
+    "test": "cd ./example && gulp && cd ../ && node ./test/generate.js && node ./test/match.js"
+  },
+  "keywords": [
+    "preloader",
+    "image",
+    "dominant",
+    "color",
+    "lazy"
+  ],
+  "author": "Krasimir Tsonev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krasimir/coloor-loader/issues"
+  },
+  "homepage": "https://github.com/krasimir/coloor-loader",
+  "dependencies": {
+    "coloor": "0.4.5"
+  }
+}
