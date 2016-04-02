@@ -1,6 +1,6 @@
 {
   "name": "coloor-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Image preloading utility that uses dominant color",
   "main": "index.js",
   "repository": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/krasimir/coloor-loader",
   "dependencies": {
-    "coloor": "0.4.5"
+    "coloor": "0.4.5",
+    "loader-utils": "0.2.13"
   }
 }

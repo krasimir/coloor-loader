@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/component.jsx',
+  entry: './src/page.html',
   devtool: 'source-map',
   output: {
     path: __dirname + '/dist',
@@ -11,15 +11,10 @@ module.exports = {
     loaders: [
       {
         test: /(\.jsx|\.js)$/,
-        loader: 'coloor-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: 'babel',
-        exclude: /(node_modules|bower_components)/,
+        loader: 'coloor',
+        exclude: /node_modules/,
         query: {
-          presets: ['react', 'es2015']
+          images: [__dirname + '/photos']
         }
       }
     ]

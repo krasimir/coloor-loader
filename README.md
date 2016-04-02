@@ -10,21 +10,34 @@ Install the loader with `npm i coloor-loader -D` and then add it to your `webpac
 var webpack = require('webpack');
 
 module.exports = {
-  entry: '...',
+  entry: './src/component.jsx',
   devtool: 'source-map',
   output: {
-    path: '...',
+    path: __dirname + '/dist',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
-        test: /(\.js)$/,
-        loader: 'cssx-loader',
-        exclude: /node_modules/
+        test: /(\.jsx|\.js)$/,
+        loader: 'babel',
+        exclude: /(node_modules|bower_components)/,
+        query: {
+          presets: ['react', 'es2015']
+        }
+      },
+      {
+        test: /(\.jsx|\.js)$/,
+        loader: 'coloor',
+        exclude: /node_modules/,
+        query: {
+          images: [__dirname + '/photos']
+        }
       }
     ]
   }
 };
 
 ```
+
+[Coloor](https://github.com/krasimir/coloor) is a HTML preprocessor so it makes only sense when we work with HTML. Webpack (in general) is dealing with 
