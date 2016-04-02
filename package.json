@@ -1,6 +1,6 @@
 {
   "name": "coloor-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Image preloading utility that uses dominant color",
   "main": "index.js",
   "repository": {
