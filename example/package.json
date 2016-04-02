@@ -16,6 +16,6 @@
     "babel-preset-react": "6.5.0",
     "react": "0.14.8",
     "webpack": "1.12.9",
-    "coloor-loader": "0.1.1"
+    "coloor-loader": "0.1.2"
   }
 }
