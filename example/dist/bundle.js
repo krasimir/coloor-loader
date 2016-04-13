@@ -56,6 +56,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactDom = __webpack_require__(158);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -74,6 +78,11 @@
 	  }
 	
 	  _createClass(Component, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      Coloor();
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -89,6 +98,11 @@
 	}(_react2.default.Component);
 	
 	exports.default = Component;
+	
+	
+	window.onload = function () {
+	  _reactDom2.default.render(_react2.default.createElement(Component, null), document.querySelector('#container'));
+	};
 
 /***/ },
 /* 1 */
@@ -19685,6 +19699,15 @@
 	
 	module.exports = deprecated;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	module.exports = __webpack_require__(3);
+
 
 /***/ }
 /******/ ]);

@@ -1,6 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 export default class Component extends React.Component {
+  componentDidMount() {
+    Coloor();
+  }
   render() {
     return (
       <section>
@@ -10,3 +14,7 @@ export default class Component extends React.Component {
     )
   }
 }
+
+window.onload = function () {
+  ReactDOM.render(<Component />, document.querySelector('#container'));
+};
